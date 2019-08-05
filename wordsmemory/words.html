@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>単語帳｜問題</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="logo"><a href="index.html">単語帳</a></h1>
+        <h2><a href="addwords.html">単語追加</a></h2>
+    </div>
+    <div class="body">
+        <table id="questionT">
+            <tr>
+                <td id="question">単語帳</td>
+            </tr>
+            <tr>
+                <td class="selects" id="select0" onclick="answer.checkAnswer(0)">※単語を登録してください</td>
+            </tr>
+            <tr>
+                <td class="selects" id="select1" onclick="answer.checkAnswer(1)"></td>
+            </tr>
+            <tr>
+                <td class="selects" id="select2" onclick="answer.checkAnswer(2)"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>単語帳</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="logo"><a href="index.html">単語帳</a></h1>
+        <h2><a href="addwords.html">単語追加</a></h2>
+    </div>
+    <div class="body">
+        <table id="questionT">
+            <tr>
+                <td colspan="2" id="question">単語帳</td>
+            </tr>
+            <tr>
+                <td class="selects" id="start" onclick="location.href = 'words.html'">スタート</td>
+                <td class="selects" onclick="location.href = 'wordsview.html'">単語一覧</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="selects" id="start"><label id="rflabel" for="readfile">ファイルを読み込み<input type="file" id="readfile"></label></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="selects" onclick="read()" id="strs">単語追加</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="selects"><a id="downloadfile">単語ファイルを保存</a></td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/start.js" charset="utf-8"></script>
+</body>
+</html>
