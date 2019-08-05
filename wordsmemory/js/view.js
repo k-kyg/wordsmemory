@@ -1,4 +1,4 @@
-const words = Object.entries(JSON.parse(localStorage.getItem('words')));
+const words = Object.entries(JSON.parse(localStorage.getItem('words'))).sort();
 window.onload = () => outPutWord();
 window.onkeydown = () => search();
 const outPutWord = () => {
