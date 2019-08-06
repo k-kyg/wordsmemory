@@ -11,17 +11,17 @@
         {
             "src": "https://raw.githubusercontent.com/k-kyg/wordsmemory/master/icons/icon192.png",
             "sizes": "192x192",
-            "type": "/icons/icon192.png"
+            "type": "image/png"
         },
         {
             "src": "https://raw.githubusercontent.com/k-kyg/wordsmemory/master/icons/icon256.png",
             "sizes": "256x256",
-            "type": "/icons/icon256.png"
+            "type": "image/png"
         },
         {
             "src": "https://raw.githubusercontent.com/k-kyg/wordsmemory/master/icons/icon512.png",
             "sizes": "512x512",
-            "type": "/icons/icon512.png"
+            "type": "image/png"
         }
     ]
 }
