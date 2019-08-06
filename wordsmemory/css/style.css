@@ -143,7 +143,7 @@ input[type="text"]{
     padding: 5px;
     transform: translateY(10px);
 }
-#searchCondition{
+#searchCondition, .cndbtn{
     position: absolute;
     padding: 5px;
     left: calc(15% - 7px);
@@ -152,6 +152,15 @@ input[type="text"]{
     font-size: 15px;
     border: 2px solid rgb(0, 129, 204);
     outline: 0;
+    height: 30px;
+}
+.cndbtn{
+    width: 10%;
+    left: calc(15% - 7px + 20%);
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    cursor: pointer;
 }
 @media (prefers-color-scheme: dark) {
     body{
@@ -177,7 +186,7 @@ input[type="text"]{
     input[type="text"]{
         background-color: rgb(20, 20, 20);
     }
-    #searchCondition{
+    #searchCondition, .cndbtn{
         background-color: rgb(20, 20, 20);
         color: white;
     }
