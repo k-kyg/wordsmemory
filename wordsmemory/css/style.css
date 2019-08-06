@@ -162,6 +162,39 @@ input[type="text"]{
     border-radius: 5px;
     cursor: pointer;
 }
+@media screen and (max-width:639px) {
+    #questionT{
+        width: 95%;
+        height: 80%;
+    }
+    input[type="text"]{
+        width: 80%;
+    }
+    #searchCondition{
+        left: calc(10% - 7px);
+    }
+    #searchCondition, .cndbtn{
+        width: calc(40% + 7px);
+    }
+    .cndbtn{
+        left: 50%;
+    }
+    #wordstable{
+        width: 100%;
+        font-size: 20px;
+    }
+    .wordstitle{
+        width: 100%;
+    }
+    #wordstable tr td{
+        width: 50%;
+    }
+    #mean{
+        position: absolute;
+        left: 40%;
+        padding-left: 0;
+    }
+}
 @media (prefers-color-scheme: dark) {
     body{
         background-color: rgb(20, 20, 20);

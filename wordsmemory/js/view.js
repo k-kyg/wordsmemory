@@ -7,6 +7,7 @@ const outPutWord = () => {
         let wordview = document.createElement('tr');
         let view1 = document.createElement('td');
         let view2 = document.createElement('td');
+        view2.id = "mean";
         view1.textContent = "※単語を登録してください";
         view2.textContent = "";
         wordsview.appendChild(wordview);
@@ -19,6 +20,7 @@ const outPutWord = () => {
         let wordview = document.createElement('tr');
         let view1 = document.createElement('td');
         let view2 = document.createElement('td');
+        view2.id = "mean";
         view1.textContent = word[0];
         view2.textContent = word[1];
         wordsview.appendChild(wordview);
@@ -45,6 +47,7 @@ const search = () => {
                     let wordview = document.createElement('tr');
                     let view1 = document.createElement('td');
                     let view2 = document.createElement('td');
+                    view2.id = "mean";
                     view1.textContent = word[0];
                     view2.textContent = word[1];
                     wordsview.appendChild(wordview);
@@ -57,6 +60,7 @@ const search = () => {
                     let wordview = document.createElement('tr');
                     let view1 = document.createElement('td');
                     let view2 = document.createElement('td');
+                    view2.id = "mean";
                     view1.textContent = "※単語が見つかりませんでした";
                     view2.textContent = "";
                     wordsview.appendChild(wordview);
