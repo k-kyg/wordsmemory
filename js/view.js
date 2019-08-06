@@ -1,5 +1,6 @@
 const words = Object.entries(JSON.parse(localStorage.getItem('words'))).sort();
 window.onload = () => outPutWord();
+window.onkeydown = () => search();
 searchCondition.onclick = () => search();
 const outPutWord = () => {
     if(words.length === 0 || !words){
