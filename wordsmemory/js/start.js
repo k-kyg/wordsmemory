@@ -3,6 +3,14 @@ downloadfile.onclick = () => {
     let text = convertCSV(txt);
     downloadfile.href = `data:,${encodeURIComponent(text)}`;
 };
+const rmv = () => {
+    let r = confirm("本当に削除しますか？");
+    if(r === true){
+        localStorage.removeItem('words');
+    }else{
+        alert("キャンセルしました");
+    }
+}
 let txt = [];
 window.onload = () => { if(localStorage.getItem('words')) txt.push(...(Object.entries(JSON.parse(localStorage.getItem('words'))))) };
 const read = () => {
