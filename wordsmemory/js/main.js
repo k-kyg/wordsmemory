@@ -33,8 +33,7 @@ const answer = {
 		if(answer.y === x) {
 			question.textContent = "Correct!";
 			setTimeout('answer.decideCorrectAnswer()', 1000);
-		}
-		else {
+		}else{
 			question.textContent = "incorrect...";
 			setTimeout(() => question.textContent = words[answer.x[answer.y]][0], 1000);
 		}
