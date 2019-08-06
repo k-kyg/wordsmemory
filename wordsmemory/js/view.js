@@ -1,6 +1,7 @@
 const words = Object.entries(JSON.parse(localStorage.getItem('words'))).sort();
 window.onload = () => outPutWord();
 window.onkeydown = () => search();
+searchCondition.onclick = () => search();
 const outPutWord = () => {
     if(words.length === 0 || !words){
         let line = document.createElement('hr');
@@ -33,7 +34,13 @@ const search = () => {
             const val = searchWords.value.trim();
             wordsview.innerHTML = "";
             if(val){
-                const searched = words.filter(x => x.toString().indexOf(val) > -1);
+                let searched;
+                switch(searchCondition.value){
+                    case "partsame": searched = words.filter(x => x.toString().includes(val)); break;
+                    case "allsame": searched = words.filter(x => x[0].toString() === val || x[1].toString() == val); break;
+                    case "beforesame": searched = words.filter(x => x[0].startsWith(val) || x[1].startsWith(val)); break;
+                    case "aftersame":searched = words.filter(x => x[0].endsWith(val) || x[1].endsWith(val)); break;
+                }
                 for(let word of searched){
                     let line = document.createElement('hr');
                     let wordview = document.createElement('tr');
