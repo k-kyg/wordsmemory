@@ -149,7 +149,8 @@ input[type="text"]{
     left: calc(15% - 7px);
     background-color: white;
     width: 20%;
-    font-size: 15px;
+    font-size: 16px;
+    scale: scale(calc(15 / 16));
     border: 2px solid rgb(0, 129, 204);
     outline: 0;
     height: 30px;
