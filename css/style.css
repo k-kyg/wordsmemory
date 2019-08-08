@@ -205,9 +205,11 @@ input[type="text"]{
         width: 50%;
     }
     #mean{
-        position: absolute;
-        left: 40%;
+        position: relative;
+        left: -5%;
+        width: 60% !important;
         padding-right: 0 !important;
+        padding-left: 0 !important;
     }
 }
 @media (prefers-color-scheme: dark) {
