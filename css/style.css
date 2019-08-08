@@ -177,6 +177,16 @@ input[type="text"]{
         background-color: rgba(135, 207, 235, 0.95);
     }
 }
+@media screen and (max-width:339px) {
+    .selects{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:320px) {
+    .selects{
+        font-size: 14px;
+    }
+}
 @media screen and (max-width:639px) {
     #questionT{
         width: 95%;
