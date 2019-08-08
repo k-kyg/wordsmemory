@@ -7,6 +7,7 @@ const rmv = () => {
     let r = confirm("本当に削除しますか？");
     if(r === true){
         localStorage.removeItem('words');
+        alert("削除しました");
     }else{
         alert("キャンセルしました");
     }
