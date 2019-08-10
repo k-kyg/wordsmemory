@@ -137,6 +137,27 @@ label > input{
     border: none;
     background-color: rgb(0, 129, 204);
 }
+noscript{
+    position: relative;
+    display: block;
+    background-color: rgba(43, 43, 43, 0.99);
+    width: 40%;
+    left: 50%;
+    height: 40px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(20, 20, 20);
+}
+noscript p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
 input[type="text"]{
     width: 70%;
     font-family: Arial, Helvetica, sans-serif;
@@ -221,6 +242,9 @@ input[type="text"]{
         padding-right: 0 !important;
         padding-left: 0 !important;
     }
+    noscript{
+        width: 90%;
+    }
 }
 @media (prefers-color-scheme: dark) {
     body{
@@ -249,6 +273,11 @@ input[type="text"]{
     #searchCondition, .cndbtn{
         background-color: rgb(20, 20, 20);
         color: white;
+    }
+    noscript{
+        background-color: rgba(255, 255, 255, 0.99);
+        color: black;
+        box-shadow: none;
     }
     @media screen and (-webkit-min-device-pixel-ratio: 0) {
         .header {
