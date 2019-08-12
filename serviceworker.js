@@ -5,9 +5,11 @@ const cacheUrls = [
 	'/wordsmemory/js/main.js',
 	'/wordsmemory/js/start.js',
 	'/wordsmemory/js/view.js',
+	'/wordsmemory/js/addword.js',
 	'/wordsmemory/index.html',
 	'/wordsmemory/words.html',
-	'/wordsmemory/wordsview.html'
+	'/wordsmemory/wordsview.html',
+	'/wordsmemory/addwords.html'
 ]
 self.addEventListener('install', event => {
 	event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(cacheUrls)));
