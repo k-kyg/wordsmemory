@@ -1,6 +1,7 @@
 downloadfile.download = 'words.csv';
 downloadfile.onclick = () => {
     let text = convertCSV(txt);
+    downloadfile.charset = 'utf-8';
     downloadfile.href = `data:,${encodeURIComponent(text)}`;
 };
 const rmv = () => {
