@@ -91,6 +91,11 @@ a{
 #downloadfile{
     color: black;
 }
+#rflabel{
+    cursor: pointer;
+    -moz-cursor: pointer;
+    -webkit-cursor: pointer;
+}
 label > input{
     display: none;
 }
