@@ -1,8 +1,8 @@
-downloadfile.download = 'words';
+downloadfile.download = 'words.csv';
 downloadfile.onclick = () => {
     let text = convertCSV(txt);
     downloadfile.charset = 'utf-8';
-    downloadfile.href = `data:text/csv,${encodeURIComponent(text)}`;
+    downloadfile.href = `data:text,${encodeURIComponent(text)}`;
 };
 const rmv = () => {
     let r = confirm("本当に削除しますか？");
