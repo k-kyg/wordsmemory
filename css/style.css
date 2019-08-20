@@ -59,7 +59,7 @@ body{
     -webkit-transform: translateY(-50%) translateX(-50%);
     -moz-transform: translateY(-50%) translateX(-50%);
     border-spacing: 10px 30px;
-    width: 700px;
+    width: 500px;
     height: 400px;
 }
 .selects{
@@ -147,7 +147,9 @@ label > input{
     padding: 10px 30px;
 }
 #wordsview hr{
-	width: 200%;
+    left: 0;
+    width: 100vw;
+    position: absolute;
     margin: 0px;
     height: 1px;
     border: none;
@@ -284,11 +286,6 @@ input[type="text"]{
         background-color: rgba(135, 207, 235, 0.95);
     }
 }
-@media screen and (max-width:730px) {
-	#questionT{
-		width: 95%;
-	}
-}
 @media screen and (max-width:339px) {
     .selects{
         font-size: 15px;
@@ -357,12 +354,7 @@ input[type="text"]{
         width: 60% !important;
         padding-right: 0 !important;
         padding-left: 0 !important;
-	}
-	#wordsview hr{
-    	left: 0;
-    	width: 100vw;
-    	position: absolute;
-	}
+    }
     noscript{
         width: 90%;
     }
