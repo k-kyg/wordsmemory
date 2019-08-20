@@ -13,7 +13,7 @@ const randomArr = (x, y ,z) => {
 		arr[arlen] = arr[j];
 		arr[j] = t;
 	}
-	return arr.splice(0, z);
+	return arr.slice(0, z);
 }
 const answer = {
 	decideCorrectAnswer: () => {
