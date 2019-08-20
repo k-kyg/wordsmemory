@@ -38,11 +38,8 @@
     <script src="js/view.js" charset="utf-8"></script>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/serviceworker.js').then(registration => {
-            registration.onupdatefound = () => {
-                console.log('アップデートがあります！');
-                registration.update();
-            }
+            navigator.serviceWorker.register('serviceworker.js').then(function () {
+                console.log("Service Worker Registered");
             });
         }
     </script>
