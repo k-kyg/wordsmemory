@@ -1,4 +1,4 @@
-const words = Object.entries(JSON.parse(localStorage.getItem('words'))) ?? [];
+const words = Object.entries(JSON.parse(localStorage.getItem('words')) ?? []);
 const add = () => {
 	try{
 		if (!wordkey.value || !wordmean.value) throw new Error("Null words content");
